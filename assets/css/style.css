@@ -29,6 +29,9 @@ h1, h2, h3, h4, h5, h6 {
 .text-center {
     text-align:center;
 }
+.text-left {
+    text-align:left;
+}
 
 h1 {
     font-weight:900;
@@ -79,7 +82,7 @@ font-size: 18px;
 #home-sec {   
 
  padding-top:75px;
-    color:#fff;
+    color:#1c80d6;
 
 }
 #carousel-example {
