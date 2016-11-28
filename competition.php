@@ -13,7 +13,7 @@
     <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
-    <title>Competitions - SUST Competition Archive</title>
+    <title>Home - SUST Competition Archive</title>
     <!--REQUIRED STYLE SHEETS-->
     <!-- BOOTSTRAP CORE STYLE CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
@@ -38,11 +38,56 @@
     
     <!--HOME SECTION-->
      
+    <div id="home-sec">   
+    <div class="container"  >
+        <div class="row text-center">
+            <div  class="col-md-12" >
+                <div id="carousel-example" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="item active">
+
+                            <img src="assets/img/cse-carnival.jpg" alt="" />
+                            <div class="carousel-caption" >
+                                <h4 class="back-light">CSE Carnival</h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/cse-carnival2.jpg" alt="" />
+                            <div class="carousel-caption ">
+                                <h4 class="back-light">CSE Carnival</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example" data-slide-to="1"></li>
+                    </ol>
+                </div>
+                 
+            </div>
+        </div>
+    </div>
+
+
+    </div>
 
      <!--END HOME SECTION-->
+     <div id="home-sec">   
+    <div class="container"  >
+        <div class="row text-center">
+            <div  class="col-md-12 competition-info" >
+                <h2>CSE Carnival</h2>
+                 
+            </div>
+        </div>
+    </div>
+    </div>
 
-     <?php require './common/competitionlist.php'; ?>
+    <!--CONTACT SECTION-->
 
+    <!--END CONTACT SECTION-->
   
     <!--FOOTER SECTION -->
     <?php require './common/footer.php'; ?>

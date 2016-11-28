@@ -4486,6 +4486,12 @@ a.thumbnail.active {
 .alert-warning .alert-link {
   color: #66512c;
 }
+.competition-info {
+  background-color: #ddd;
+  border-color: #ebccd1;
+  padding: 15px;
+  font-size: 20px;
+}
 .competition-list {
   background-color: #ddd;
   border-color: #ebccd1;

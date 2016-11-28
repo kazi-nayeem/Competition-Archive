@@ -15,9 +15,9 @@
                   <div class="tab-content">
                     <div id="home" class="tab-pane fade in active">
                       <ul>
-                          <li><a href="">Competition 1</a></li>
-                          <li><a href="">Competition 2</a></li>
-                          <li><a href="">Competition 3</a></li>
+                          <li><a href="./competition.php">Competition 1</a></li>
+                          <li><a href="./competition.php">Competition 2</a></li>
+                          <li><a href="./competition.php">Competition 3</a></li>
                       </ul>
                     </div>
                     <div id="menu1" class="tab-pane fade">
