@@ -4497,6 +4497,7 @@ a.thumbnail.active {
 .competition-list li{
   font-size: 17px;
   text-align: left;
+  padding: 5px;
 }
 
 .alert-danger {
