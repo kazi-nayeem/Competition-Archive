@@ -4506,6 +4506,20 @@ a.thumbnail.active {
   padding: 5px;
 }
 
+.department-list {
+  background-color: #ddd;
+  border-color: #ebccd1;
+  padding: 15px;
+}
+.department-list ul{
+  font-size: 20px;
+}
+.department-list li{
+  font-size: 17px;
+  text-align: left;
+  padding: 5px;
+}
+
 .alert-danger {
   color: #a94442;
   background-color: #f2dede;

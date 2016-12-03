@@ -41,7 +41,8 @@
 
      <!--END HOME SECTION-->
 
-     <?php require './common/competitionlist.php'; ?>
+     <?php $competitionscoupe = "University"; 
+     require './common/competitionlist.php'; ?>
 
   
     <!--FOOTER SECTION -->

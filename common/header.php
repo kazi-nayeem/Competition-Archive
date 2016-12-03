@@ -16,7 +16,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="./index.php">HOME</a></li>
                     <li><a href="./competitions.php">COMPETITIONS</a></li>
-                    <li><a href="#projects">DEPARTMENTS</a></li>
+                    <li><a href="./departments.php">DEPARTMENTS</a></li>
                     <li><a href="#contact">LOGIN</a></li>
                     <li><a href="#about">ABOUT</a></li>
                 </ul>

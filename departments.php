@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -13,7 +13,7 @@
     <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
-    <title>Home - SUST Competition Archive</title>
+    <title>Departments - SUST Competition Archive</title>
     <!--REQUIRED STYLE SHEETS-->
     <!-- BOOTSTRAP CORE STYLE CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
@@ -38,56 +38,40 @@
     
     <!--HOME SECTION-->
      
-    <div id="home-sec">   
+
+     <!--END HOME SECTION-->
+
+     <div id="home-sec">   
     <div class="container"  >
         <div class="row text-center">
-            <div  class="col-md-12" >
-                <div id="carousel-example" class="carousel slide" data-ride="carousel">
-
-                    <div class="carousel-inner">
-                        <div class="item active">
-
-                            <img src="assets/img/sust.jpg" alt="" />
-                            <div class="carousel-caption" >
-                                <h4 class="back-light"><a href="www.sust.edu">Shahjalal University of Science and Technology</a></h4>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/sust2.jpg" alt="" />
-                            <div class="carousel-caption ">
-                                <h4 class="back-light"><a href="www.sust.edu">Shahjalal University of Science and Technology</a></h4>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/3.jpg" alt="" />
-                            <div class="carousel-caption ">
-                                <h4 class="back-light"><a href="www.sust.edu">Shahjalal University of Science and Technology</a></h4>
-                            </div>
-                        </div>
+            <div  class="col-md-12 department-list" >
+                <h2>Departments in University</h2>
+                  <ul class="nav nav-pills">
+                    <li class="active"><a data-toggle="pill" href="#home">Applied Science & Technology</a></li>
+                    <li><a data-toggle="pill" href="#menu1">Life Sciences</a></li>
+                    <li><a data-toggle="pill" href="#menu2">Management & Business Administration</a></li>
+                  </ul>
+                  
+                  <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                      <ul>
+                          <li><a href="./department.php">Computer Science and Engineering</a></li>
+                          <li><a href="./department.php">Electrical and Electronic Engineering</a></li>
+                          <li><a href="./department.php">Civil and Environmental Engineering</a></li>
+                      </ul>
                     </div>
-
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example" data-slide-to="1"></li>
-                        <li data-target="#carousel-example" data-slide-to="2"></li>
-                    </ol>
-                </div>
-                 
+                    <div id="menu1" class="tab-pane fade">
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    </div>
+                  </div>
             </div>
         </div>
     </div>
     </div>
 
-     <!--END HOME SECTION-->
-     <?php $competitionscoupe = "University"; 
-     require './common/competitionlist.php'; ?>
-     
-
-    <!--CONTACT SECTION-->
-    <section  id="contact">
-        <?php require './common/contactinfo.php'; ?>
-      </section>
-    <!--END CONTACT SECTION-->
   
     <!--FOOTER SECTION -->
     <?php require './common/footer.php'; ?>

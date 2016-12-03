@@ -5,7 +5,7 @@
     <div class="container"  >
         <div class="row text-center">
             <div  class="col-md-12 competition-list" >
-                <h2>Competitions in University</h2>
+                <h2>Competitions in <?php echo $competitionscoupe; ?></h2>
                   <ul class="nav nav-pills">
                     <li class="active"><a data-toggle="pill" href="#home">Current</a></li>
                     <li><a data-toggle="pill" href="#menu1">Upcomming</a></li>
