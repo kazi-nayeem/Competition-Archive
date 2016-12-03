@@ -13,7 +13,7 @@
     <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
-    <title>Home - SUST Competition Archive</title>
+    <title>CSE Carnival - SUST Competition Archive</title>
     <!--REQUIRED STYLE SHEETS-->
     <!-- BOOTSTRAP CORE STYLE CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
@@ -33,7 +33,7 @@
     <![endif]--></head>
 <body>
      <!-- NAV SECTION -->
-        <?php require '/common/header.php'; ?>
+    <?php require '/common/header.php'; ?>
      <!--END NAV SECTION -->
     
     <!--HOME SECTION-->
@@ -76,12 +76,49 @@
      <!--END HOME SECTION-->
      <div id="home-sec">   
     <div class="container"  >
-        <div class="row text-center">
+        <div class="row">
             <div  class="col-md-12 competition-info" >
-                <h2>CSE Carnival</h2>
-                 
+                <h3> <strong>Title: </strong> &nbsp; CSE Carnival</h3>
+                <h3> <strong>Department: </strong> &nbsp; Computer Science and Engineering</h3>
+                 <div class="row">
+                     <div class="col-md-6">
+                         <p> <strong>Start Date: </strong> &nbsp; 22/11/2015</p>
+                        <p> <strong>Status: </strong> &nbsp; END</p>
+                     </div>
+                     <div class="col-md-6">
+                         <p> <strong>End Date: </strong> &nbsp; 25/11/2015</p>
+                     </div>
+                 </div>
+                    <table class="event-table">
+                    <caption>Events List of CSE Carnival</caption>
+                      <tr>
+                        <th>Event Name</th>
+                        <th>Status</th> 
+                        <th>Time</th>
+                        <th># of Participant</th>
+                      </tr>
+                      <tr>
+                        <td><a href="./event.php">National Programming Contest</a></td>
+                        <td>End</td>
+                        <td>25/11/2016</td>
+                        <td>110</td>
+                      </tr>
+                      <tr>
+                        <td><a href="./event.php">Software Contest</a></td>
+                        <td>End</td>
+                        <td>24/11/2016</td>
+                        <td>40</td>
+                      </tr>
+                      <tr>
+                        <td><a href="./event.php">Gaming Contest</a></td>
+                        <td>End</td>
+                        <td>25/11/2016</td>
+                        <td>80</td>
+                      </tr>
+                    </table>
             </div>
         </div>
+        
     </div>
     </div>
 

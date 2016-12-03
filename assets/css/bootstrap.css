@@ -4491,7 +4491,22 @@ a.thumbnail.active {
   border-color: #ebccd1;
   padding: 15px;
   font-size: 20px;
+  align-items: center;
+  text-align: left;
 }
+
+.event-table {
+  width: 100%;
+}
+.event-table caption{
+  text-align: center;
+  font-size: 22px;
+}
+
+.event-table th td{
+  padding: 10px; 
+}
+
 .competition-list {
   background-color: #ddd;
   border-color: #ebccd1;
