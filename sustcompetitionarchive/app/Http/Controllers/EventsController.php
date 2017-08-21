@@ -9,6 +9,10 @@ use Illuminate\Http\Request;
 
 class EventsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -95,8 +99,8 @@ class EventsController extends Controller
     }
     public function updateranklist(Request $request, $id)
     {
-        Team::whereEventId($id)->delete();
         $event = Event::findOrFail($id);
+        Team::whereEventId($id)->delete();
         $path = $request->file('file');
         $file = fopen($path, "r");
         $all_data = array();
@@ -120,6 +124,12 @@ class EventsController extends Controller
                 ]);
             }
         }
-        return $request->all();
+        return redirect('/user/events/'.$id);
+    }
+    public function deleteranklist(Request $request, $id)
+    {
+        $event = Event::findOrFail($id);
+        Team::whereEventId($id)->delete();
+        return redirect('/user/events/'.$id);
     }
 }

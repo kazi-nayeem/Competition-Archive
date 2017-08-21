@@ -121,17 +121,23 @@
                                         </div>
                                     </div>
                                 </div>
-                                <form id="ranklist" name="ranklist" method="post" enctype="multipart/form-data" action="{{ url('user/events/'.$event->id.'/updateranklist') }}">
-                                    {{ csrf_field() }}
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <input type="file" name="file" required>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <button type="submit" class="btn btn-primary">Update Ranklist</button>
-                                        </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <form id="ranklist" name="ranklist" method="post" enctype="multipart/form-data" action="{{ url('user/events/'.$event->id.'/updateranklist') }}">
+                                            {{ csrf_field() }}
+                                                <div class="col-md-3">
+                                                    <input type="file" name="file" required>
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <button type="submit" class="btn btn-primary">Update Ranklist</button>
+                                                </div>
+                                        </form>
+                                        <form id="deleteranklist" name="deleteranklist" method="post" action="{{ url('user/events/'.$event->id.'/deleteranklist') }}">
+                                            {{ csrf_field() }}
+                                            <button type="submit" class="btn btn-danger">Delete Ranklist</button>
+                                        </form>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>

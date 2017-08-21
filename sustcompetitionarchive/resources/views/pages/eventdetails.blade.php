@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('pagetitle')
-    Event
+    Competiton
 @endsection
 
 @section('body')
@@ -10,7 +10,7 @@
         <div class="container"  >
             <div class="row">
                 <div  class="col-md-12 competition-info" >
-                    <div style="background-color: rgba(53,185,255,0.62)">
+                    <div style="background-color: {{ $event->start_time>Carbon\Carbon::now()? 'rgba(53,185,255,0.62)': ($event->end_time<Carbon\Carbon::now()? 'rgba(255,55,26,0.62)': 'rgba(46,191,17,0.62)') }}">
                         <div style="padding-top: 20px; padding-bottom: 20px">
                             <h2 style="text-align: center"> <strong>{{ $event->title}} </strong></h2>
                             <h3 class="text-center"> in<strong> {{ \App\Competition::findOrFail($event->competition_id)->title }} </strong></h3>

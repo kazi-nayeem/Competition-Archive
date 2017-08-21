@@ -3,7 +3,6 @@
         <ul class="nav" id="main-menu">
             <li>
                 <div class="user-img-div">
-                    <img src="{{ asset('adminassets/img/user.png') }}" class="img-thumbnail" />
 
                     <div class="inner-text">
                         Name: {{ Auth::user()->full_name }}

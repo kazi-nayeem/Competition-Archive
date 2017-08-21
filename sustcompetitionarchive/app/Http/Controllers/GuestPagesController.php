@@ -15,12 +15,12 @@ class GuestPagesController extends Controller
 {
     public function index()
     {
-        $competitionsupcoming = Competition::where('start_time','>=',Carbon::now())->orderBy('start_time', 'desc')->get();
-        $competitionsended = Competition::where('end_time','<=',Carbon::now())->orderBy('start_time', 'desc')->get();
+        $competitionsupcoming = Competition::where('start_time','>=',Carbon::now())->orderBy('start_time', 'desc')->take(10)->get();
+        $competitionsended = Competition::where('end_time','<=',Carbon::now())->orderBy('start_time', 'desc')->take(10)->get();
         $competitionscurrent = Competition::where('end_time','>=',Carbon::now())
-            ->where('start_time','<=',Carbon::now())->orderBy('start_time', 'desc')->get();
+            ->where('start_time','<=',Carbon::now())->orderBy('start_time', 'desc')->take(10)->get();
         $competitionlisttitle = "Competitions In University";
-        $images = Image::all();
+        $images = Image::orderBy('updated_at', 'desc')->take(5)->get();
         return view('pages.welcome', compact('competitionsupcoming','competitionsended', 'competitionscurrent' ,'competitionlisttitle', 'images'));
     }
     public function competition($id)
